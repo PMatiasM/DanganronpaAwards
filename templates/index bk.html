@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block style %} style="background-repeat: no-repeat; background-attachment: fixed; background-image: url(https://github.com/Pedroaaaa/ddddddd/blob/main/Sem%20t%C3%ADtulo.png?raw=true); background-size: 100% 100%;" {% endblock %}
+{% block content %}
+    <div class="container" style=
+"display: flex;
+width: unset;
+padding-right: unset;
+padding-left: unset;
+margin-right: unset;
+margin-left: -500px;"> 
+    <img alt="Monokuma Acenando Esquerda" src='/static/1409275-middle (1).png' class="img-fluid" style="width: 850px;"/>
+    <h1 style="
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px;">Welcome to{% block title %} Dangaronpa Awards {% endblock %}
+        <div class="container">
+            <a class="btn btn-outline-info btn-sm" href='/login' role="button">Login</a>
+        </div>
+    </h1>
+    <img alt="Monokuma Acenando Direita" src='/static/1409275-middle.png' class="img-fluid" style="width: 850px;"/>
+    </div>
+
+{% endblock %}

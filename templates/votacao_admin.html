@@ -1,0 +1,127 @@
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Votação</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css"></style>
+    <style>
+      .rounded-circle {
+        border-radius: 30% !important;
+      }
+    </style>
+    <style type="text/css"></style>
+  </head>
+
+  <body style="background-color: rgba(64, 53, 93, 1);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container" style="margin: 0;">
+        <a class="navbar-brand" href="/votacao">
+          <img src="/static/12.png" class="img-fluid" style="width: 45px;height: 45px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+            </li>
+            {% if conta_admin %}
+            <li class="nav-item active">
+              <a class="nav-link" href="/admin">Admin<span class="sr-only">(current)</span></a>
+            </li>
+            {% endif %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Categorias</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/votacao/categoria_melhor_waifu">Melhor Waifu</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_husband">Melhor Husband</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_descoberta_de_corpo">Melhor Descoberta DeCorpo</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_execucao">Melhor Execução</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_trial">Melhor Trial</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_plot_twist">Melhor Plot Twist</a>
+                <a class="dropdown-item" href="/votacao/categoria_melhor_pre_investigacao">Melhor Pré Investigação</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-4 mt-2 text-center">
+          <h2 style="color: white;">Escolha uma categoria</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="\static\13.png"data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_waifu" role="button">Melhor Waifu</a>
+          <h3></h3>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="\static\12.png"data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_husband" role="button">Melhor Husband</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px; border-radius: 50%!important;"src="\static\afaaa.png" data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_investigacao" role="button">Melhor Investigacao</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px; border-radius: 50%!important;"src="\static\junkpiccz.png" data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_execucao" role="button">Melhor Execucao</a>
+          <h3></h3>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="\static\aaa.png"data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_trial" role="button">Melhor Trial</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px; border-radius: 50%!important;"src="\static\papel4.png" data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_plot_twist" role="button">Melhor Plot Twist</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px; border-radius: 50%!important;"src="\static\aaaa.png" data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_pre_investigacao" role="button">Melhor Pré Investigacao</a>
+          <h3></h3>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="\static\afa.png"data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_capitulo" role="button">Melhor Capitulo</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px; border-radius: 50%!important;"src="\static\fa.png" data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_descoberta_de_corpo" role="button">Melhor Descoberta de Corpo</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="\static\aafaaa.png"data-holder-rendered="true">
+          <h3></h3>
+          <a class="btn btn-outline-light" href="/votacao/categoria_melhor_background_de_personagem" role="button">Melhor Background de Personagem</a>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
