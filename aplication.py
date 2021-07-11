@@ -10,14 +10,14 @@ import google.auth.transport.requests
 import pandas as pd
 
 app = Flask("DW")
-app.secret_key = "adfbnviaadfjbkn"
+app.secret_key = "************"
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 banco = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    passwd = "pmm@2406",
+    passwd = "*******",
     database = "dw",
 )
 banco.autocommit = True
@@ -115,7 +115,7 @@ def callback():
     
     session["google_id"] = id_info.get("sub")
     session["name"] = id_info.get("name")
-    if session["google_id"] == "111357895517730049811":
+    if session["google_id"] == "*****************":
         return redirect("/admin")
     else:
         return redirect("/votacao")
@@ -133,7 +133,7 @@ def index():
 @app.route("/admin", methods=('GET', 'POST'))
 @login_is_required
 def admin():
-    if session["google_id"] == "111357895517730049811":
+    if session["google_id"] == "**************":
         if request.method == 'POST':
             r = categoriaf()
             #return (f"O vencedor é {r[0]}")
@@ -146,7 +146,7 @@ def admin():
 @app.route("/votacao")
 @login_is_required
 def votacao():
-    if session["google_id"] == "111357895517730049811":
+    if session["google_id"] == "*****************":
         return render_template('votacao_admin.html', conta_admin = True)
     else:
         return render_template('votacao_admin.html', conta_admin = False)
