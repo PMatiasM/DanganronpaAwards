@@ -1,0 +1,2 @@
+Site sendo desenvolvido para amigos, em Pthon, Flask, HTML, CSS.
+O projeto consiste em um site para a votação de uma competição, tomando todos os cuidados para que seja a mais segura possível, uma dessa medidas de segurança é a implementação do login pela API do Google Login. O Projeto ainda não foi finalizado, seu Back End se encontra praticamente acabado, mas ainda falta a implementação de algumas paginas do site.
